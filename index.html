@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaTour | Explore Java</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">JavaTour</a>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="places.html"><i class="fas fa-map-marker-alt"></i> Places</a></li>
+      <li><a href="culture.html"><i class="fas fa-theater-masks"></i> Culture</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Dark Mode Toggle -->
+<div class="theme-toggle" id="themeToggle">
+  <div class="theme-toggle-slider">
+    <i class="fas fa-sun"></i>
+  </div>
+</div>
+
+<!-- Parallax Header -->
+<header class="parallax-header" style="background-image: url('https://images.unsplash.com/photo-1548095115-45697e5b2c34');">
+  <div class="parallax-content">
+    <h1 class="parallax-title animate-fade">Discover Java Island</h1>
+    <p class="parallax-subtitle animate-fade delay-1">Adventure, Culture, and Magic Await You</p>
+    <div class="header-buttons">
+      <a href="places.html" class="btn animate-slide delay-2"><i class="fas fa-compass"></i> Explore Places</a>
+      <a href="#features" class="btn btn-outline animate-slide delay-3"><i class="fas fa-info-circle"></i> Learn More</a>
+    </div>
+  </div>
+</header>
+
+<section class="section about">
+  <div class="container">
+    <h2 class="section-title animate-zoom">Why Java?</h2>
+    <p class="animate-zoom delay-1">
+      Java, the heart of Indonesia, is an island of endless wonders. From the modern buzz of Jakarta to the ancient temples of Yogyakarta,
+      the cool highlands of Bandung to the volcanic landscapes of Bromo, Java offers a rich tapestry of culture, nature, and adventure.
+    </p>
+    
+    <!-- Featured Destinations -->
+    <div class="cards mt-5">
+      <div class="card animate-zoom delay-1">
+        <img src="https://images.unsplash.com/photo-1554446422-c4d46271ab85" alt="Jakarta">
+        <div class="card-content">
+          <h3>Jakarta</h3>
+          <p>The vibrant capital city filled with skyscrapers, historic sites, and endless nightlife.</p>
+          <a href="places.html" class="btn btn-small">Explore</a>
+        </div>
+      </div>
+      
+      <div class="card animate-zoom delay-2">
+        <img src="https://images.unsplash.com/photo-1559060019-1b3f1535aa80" alt="Yogyakarta">
+        <div class="card-content">
+          <h3>Yogyakarta</h3>
+          <p>The soul of Javanese culture, home to Borobudur and Prambanan temples.</p>
+          <a href="places.html" class="btn btn-small">Explore</a>
+        </div>
+      </div>
+      
+      <div class="card animate-zoom delay-3">
+        <img src="https://images.unsplash.com/photo-1542094974-161fa1710ed9" alt="Mount Bromo">
+        <div class="card-content">
+          <h3>Mount Bromo</h3>
+          <p>Witness otherworldly volcanic landscapes and unforgettable sunrises.</p>
+          <a href="places.html" class="btn btn-small">Explore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Video Section -->
+<section class="section video-section">
+  <div class="container">
+    <h2 class="section-title">Experience Java</h2>
+    <div class="video-container animate-zoom">
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/rU6ntVT68H0" title="Experience Java" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+  <div class="container">
+    <h2 class="section-title">Why Travel With Us?</h2>
+    
+    <div class="cards">
+      <div class="feature-card animate-fade">
+        <div class="feature-icon">
+          <i class="fas fa-route"></i>
+        </div>
+        <h3>Expert Guides</h3>
+        <p>Our local guides have deep knowledge of Java's culture, history, and hidden gems.</p>
+      </div>
+      
+      <div class="feature-card animate-fade delay-1">
+        <div class="feature-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Safe Travel</h3>
+        <p>Safety is our priority with 24/7 support and thoroughly vetted accommodations.</p>
+      </div>
+      
+      <div class="feature-card animate-fade delay-2">
+        <div class="feature-icon">
+          <i class="fas fa-hand-holding-heart"></i>
+        </div>
+        <h3>Responsible Tourism</h3>
+        <p>We support local communities and promote sustainable travel practices.</p>
+      </div>
+      
+      <div class="feature-card animate-fade delay-3">
+        <div class="feature-icon">
+          <i class="fas fa-user-cog"></i>
+        </div>
+        <h3>Customized Experiences</h3>
+        <p>Tailor your trip to match your interests, preferences, and pace.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Counts -->
+<section class="section count-section">
+  <div class="container">
+    <h2 class="section-title">JavaTour By The Numbers</h2>
+    
+    <div class="count-cards">
+      <div class="count-card animate-fade">
+        <div class="count-number" data-count="10000">0</div>
+        <p class="count-title">Happy Travelers</p>
+      </div>
+      
+      <div class="count-card animate-fade delay-1">
+        <div class="count-number" data-count="50">0</div>
+        <p class="count-title">Destinations</p>
+      </div>
+      
+      <div class="count-card animate-fade delay-2">
+        <div class="count-number" data-count="150">0</div>
+        <p class="count-title">Local Guides</p>
+      </div>
+      
+      <div class="count-card animate-fade delay-3">
+        <div class="count-number" data-count="8">0</div>
+        <p class="count-title">Years Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Weather Widget Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Current Weather</h2>
+    
+    <div class="weather-widget">
+      <div class="weather-location">
+        <i class="fas fa-map-marker-alt"></i> Jakarta, Java
+      </div>
+      <div class="weather-temp">31°C</div>
+      <div class="weather-description">Partly Cloudy</div>
+      <div class="weather-details">
+        <div class="weather-detail">
+          <i class="fas fa-tint"></i>
+          <span>75%</span>
+          <small>Humidity</small>
+        </div>
+        <div class="weather-detail">
+          <i class="fas fa-wind"></i>
+          <span>12 km/h</span>
+          <small>Wind</small>
+        </div>
+        <div class="weather-detail">
+          <i class="fas fa-sun"></i>
+          <span>05:45</span>
+          <small>Sunrise</small>
+        </div>
+      </div>
+      <div class="weather-forecast">
+        <div class="forecast-day">
+          <span>Mon</span>
+          <i class="fas fa-sun"></i>
+          <span>30°C</span>
+        </div>
+        <div class="forecast-day">
+          <span>Tue</span>
+          <i class="fas fa-cloud-sun"></i>
+          <span>29°C</span>
+        </div>
+        <div class="forecast-day">
+          <span>Wed</span>
+          <i class="fas fa-cloud-sun-rain"></i>
+          <span>28°C</span>
+        </div>
+        <div class="forecast-day">
+          <span>Thu</span>
+          <i class="fas fa-cloud-sun"></i>
+          <span>30°C</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Interactive Gallery Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Java Visual Journey</h2>
+    
+    <div class="interactive-gallery">
+      <div class="gallery-card" data-full="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3">
+        <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3" alt="Rice Terraces">
+        <div class="gallery-info">
+          <h3>Rice Terraces</h3>
+          <p>The stunning green terraces in the hills of Java</p>
+        </div>
+      </div>
+      <div class="gallery-card" data-full="https://images.unsplash.com/photo-1583309219338-a582f1f9ca6d">
+        <img src="https://images.unsplash.com/photo-1583309219338-a582f1f9ca6d" alt="Temple">
+        <div class="gallery-info">
+          <h3>Borobudur Temple</h3>
+          <p>The world's largest Buddhist temple at sunrise</p>
+        </div>
+      </div>
+      <div class="gallery-card" data-full="https://images.unsplash.com/photo-1625377972071-8a0db32b9a87">
+        <img src="https://images.unsplash.com/photo-1625377972071-8a0db32b9a87" alt="Beach">
+        <div class="gallery-info">
+          <h3>Beaches of Java</h3>
+          <p>Pristine white sand beaches along the coastline</p>
+        </div>
+      </div>
+      <div class="gallery-card" data-full="https://images.unsplash.com/photo-1549223862-2e61594b554f">
+        <img src="https://images.unsplash.com/photo-1549223862-2e61594b554f" alt="Cultural">
+        <div class="gallery-info">
+          <h3>Cultural Performances</h3>
+          <p>Traditional dancers in colorful costumes</p>
+        </div>
+      </div>
+      <div class="gallery-card" data-full="https://images.unsplash.com/photo-1558005137-d9619a5c539f">
+        <img src="https://images.unsplash.com/photo-1558005137-d9619a5c539f" alt="Food">
+        <div class="gallery-info">
+          <h3>Culinary Delights</h3>
+          <p>Rich flavors of traditional Javanese cuisine</p>
+        </div>
+      </div>
+      <div class="gallery-card" data-full="https://images.unsplash.com/photo-1658467918612-5645205930fc">
+        <img src="https://images.unsplash.com/photo-1658467918612-5645205930fc" alt="City">
+        <div class="gallery-info">
+          <h3>Urban Exploration</h3>
+          <p>Modern cities with stunning architecture</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Modal -->
+<div class="gallery-modal" id="galleryModal">
+  <div class="modal-close" id="modalClose">
+    <i class="fas fa-times"></i>
+  </div>
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Gallery Image">
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Tour Packages</h2>
+    <p class="text-center mb-5">Choose the perfect package for your Java adventure</p>
+    
+    <div class="price-cards">
+      <div class="price-card">
+        <div class="price-header">
+          <h3 class="price-title">Quick Explorer</h3>
+          <div class="price-amount">$599</div>
+          <div class="price-period">per person</div>
+        </div>
+        <ul class="price-features">
+          <li><i class="fas fa-check-circle"></i> 5 days / 4 nights</li>
+          <li><i class="fas fa-check-circle"></i> Jakarta and Bandung</li>
+          <li><i class="fas fa-check-circle"></i> 3-star accommodations</li>
+          <li><i class="fas fa-check-circle"></i> Breakfast included</li>
+          <li><i class="fas fa-check-circle"></i> Airport transfers</li>
+          <li><i class="fas fa-check-circle"></i> English-speaking guide</li>
+        </ul>
+        <div class="text-center">
+          <a href="contact.html" class="btn">Book Now</a>
+        </div>
+      </div>
+      
+      <div class="price-card featured">
+        <div class="featured-badge">Popular</div>
+        <div class="price-header">
+          <h3 class="price-title">Complete Java</h3>
+          <div class="price-amount">$1,299</div>
+          <div class="price-period">per person</div>
+        </div>
+        <ul class="price-features">
+          <li><i class="fas fa-check-circle"></i> 10 days / 9 nights</li>
+          <li><i class="fas fa-check-circle"></i> Jakarta, Bandung, Yogyakarta</li>
+          <li><i class="fas fa-check-circle"></i> 4-star accommodations</li>
+          <li><i class="fas fa-check-circle"></i> All meals included</li>
+          <li><i class="fas fa-check-circle"></i> Private transportation</li>
+          <li><i class="fas fa-check-circle"></i> Premium tour guide</li>
+          <li><i class="fas fa-check-circle"></i> Cultural show tickets</li>
+          <li><i class="fas fa-check-circle"></i> Sunrise tour at Bromo</li>
+        </ul>
+        <div class="text-center">
+          <a href="contact.html" class="btn">Book Now</a>
+        </div>
+      </div>
+      
+      <div class="price-card">
+        <div class="price-header">
+          <h3 class="price-title">Luxury Adventure</h3>
+          <div class="price-amount">$2,499</div>
+          <div class="price-period">per person</div>
+        </div>
+        <ul class="price-features">
+          <li><i class="fas fa-check-circle"></i> 14 days / 13 nights</li>
+          <li><i class="fas fa-check-circle"></i> Full Java tour experience</li>
+          <li><i class="fas fa-check-circle"></i> 5-star accommodations</li>
+          <li><i class="fas fa-check-circle"></i> All inclusive package</li>
+          <li><i class="fas fa-check-circle"></i> Luxury transportation</li>
+          <li><i class="fas fa-check-circle"></i> Private tour guide</li>
+          <li><i class="fas fa-check-circle"></i> Exclusive experiences</li>
+          <li><i class="fas fa-check-circle"></i> Helicopter tour</li>
+        </ul>
+        <div class="text-center">
+          <a href="contact.html" class="btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section testimonials">
+  <div class="container">
+    <h2 class="section-title">Traveler Experiences</h2>
+    
+    <div class="testimonial-container">
+      <div class="testimonial animate-slide">
+        <div class="testimonial-content">
+          "My trip to Java was absolutely magical! The Borobudur temple at sunrise was a life-changing experience. The local people were so friendly and welcoming. I can't wait to go back and explore more of this beautiful island."
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="Sarah J.">
+          <div class="author-details">
+            <h4>Sarah Johnson</h4>
+            <p>Adventure Traveler</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial animate-slide delay-1">
+        <div class="testimonial-content">
+          "The food in Java is absolutely incredible! From street food to fine dining, every meal was a culinary adventure. The local guides arranged by JavaTour were knowledgeable and passionate about sharing their culture."
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mark D.">
+          <div class="author-details">
+            <h4>Mark Davis</h4>
+            <p>Food Enthusiast</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial animate-slide delay-2">
+        <div class="testimonial-content">
+          "As a photographer, Java offered endless opportunities. From vibrant city life to serene natural landscapes, I filled my portfolio with incredible shots. JavaTour went above and beyond to take me to the best photography spots."
+        </div>
+        <div class="testimonial-author">
+          <img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Emma W.">
+          <div class="author-details">
+            <h4>Emma Williams</h4>
+            <p>Professional Photographer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section class="section">
+  <div class="container">
+    <div class="contact-form">
+      <h2 class="section-title">Stay Updated</h2>
+      <p class="text-center mb-5">Subscribe to our newsletter for travel tips, special offers, and Java insights!</p>
+      
+      <form id="newsletterForm">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="Your email address" required>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-container">
+            <input type="checkbox" required>
+            <span class="checkmark"></span>
+            I agree to receive travel updates and promotional emails
+          </label>
+        </div>
+        <button type="submit" class="btn btn-submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+      </form>
+      <div id="subscribeSuccess" class="subscribe-success" style="display: none;">
+        <i class="fas fa-check-circle"></i>
+        <p>Thank you for subscribing! You'll receive our latest updates soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>JavaTour</h3>
+      <p>Explore the wonders of Java Island with our expert guides and curated travel experiences.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Tourism St, Jakarta</li>
+        <li><i class="fas fa-phone"></i> +62 123 456 7890</li>
+        <li><i class="fas fa-envelope"></i> info@javatour.com</li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h3>We Accept</h3>
+      <div class="payment-methods">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright">
+    <p>&copy; 2025 JavaTour. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating Navigation -->
+<div class="floating-nav" id="floatingNav">
+  <a href="index.html"><i class="fas fa-home"></i></a>
+  <a href="places.html"><i class="fas fa-map-marker-alt"></i></a>
+  <a href="culture.html"><i class="fas fa-theater-masks"></i></a>
+  <a href="contact.html"><i class="fas fa-envelope"></i></a>
+</div>
+
+<!-- Back to Top Button -->
+<div class="back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+  // Back to top functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.querySelector('.back-to-top');
+    const floatingNav = document.getElementById('floatingNav');
+    
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+        floatingNav.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+        floatingNav.classList.remove('visible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Dark mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeSlider = document.querySelector('.theme-toggle-slider');
+    
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        themeSlider.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        themeSlider.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+    
+    // Check for saved theme preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      themeSlider.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+    
+    // Interactive counts
+    const countElements = document.querySelectorAll('.count-number');
+    
+    function animateCount(el) {
+      const target = parseInt(el.getAttribute('data-count'));
+      const duration = 2000; // in milliseconds
+      const step = target / (duration / 16); // 16ms per frame at 60fps
+      let current = 0;
+      
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+          clearInterval(timer);
+          el.innerText = target;
+        } else {
+          el.innerText = Math.floor(current);
+        }
+      }, 16);
+    }
+    
+    // Set up intersection observer for counts
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    countElements.forEach(count => {
+      observer.observe(count);
+    });
+    
+    // Gallery functionality
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    const modal = document.getElementById('galleryModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalClose = document.getElementById('modalClose');
+    
+    galleryCards.forEach(card => {
+      card.addEventListener('click', function() {
+        const fullImagePath = this.getAttribute('data-full');
+        modalImage.src = fullImagePath;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+    
+    modalClose.addEventListener('click', function() {
+      modal.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+    
+    // Newsletter form
+    const newsletterForm = document.getElementById('newsletterForm');
+    const subscribeSuccess = document.getElementById('subscribeSuccess');
+    
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        newsletterForm.style.display = 'none';
+        subscribeSuccess.style.display = 'block';
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

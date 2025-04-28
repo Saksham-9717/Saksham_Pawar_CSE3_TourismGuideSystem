@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaTour | Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="logo">JavaTour</a>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="places.html"><i class="fas fa-map-marker-alt"></i> Places</a></li>
+      <li><a href="culture.html"><i class="fas fa-theater-masks"></i> Culture</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Dark Mode Toggle -->
+<div class="theme-toggle" id="themeToggle">
+  <div class="theme-toggle-slider">
+    <i class="fas fa-sun"></i>
+  </div>
+</div>
+
+<section class="hero contact-hero">
+  <div class="overlay">
+    <h1 class="animate-fade">Connect With Us</h1>
+    <p class="animate-fade delay-1">Have questions about planning your Java adventure? We're here to help!</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-methods">
+          <div class="contact-method animate-slide">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Our Location</h3>
+              <p>123 Tourism Street<br>Jakarta, Indonesia 10110</p>
+            </div>
+          </div>
+          
+          <div class="contact-method animate-slide delay-1">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone Number</h3>
+              <p>+62 123 456 7890<br>+62 098 765 4321</p>
+            </div>
+          </div>
+          
+          <div class="contact-method animate-slide delay-2">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email Address</h3>
+              <p>info@javatour.com<br>booking@javatour.com</p>
+            </div>
+          </div>
+          
+          <div class="contact-method animate-slide delay-3">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Office Hours</h3>
+              <p>Monday-Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-contact animate-fade">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <!-- Live Chat Button -->
+        <div class="live-chat-container animate-fade delay-4">
+          <button id="liveChatBtn" class="live-chat-btn">
+            <i class="fas fa-comments"></i> Start Live Chat
+          </button>
+        </div>
+      </div>
+      
+      <div class="contact-form-container animate-zoom">
+        <h2 class="section-title">Send Us a Message</h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" class="form-control" placeholder="How can we help?">
+          </div>
+          
+          <div class="form-group">
+            <label for="inquiry">Type of Inquiry</label>
+            <select id="inquiry" class="form-control">
+              <option value="">Select an option</option>
+              <option value="booking">Booking Inquiry</option>
+              <option value="tour">Custom Tour Request</option>
+              <option value="info">General Information</option>
+              <option value="feedback">Feedback</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" placeholder="Tell us more about your travel plans..." required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label class="checkbox-container">
+              <input type="checkbox" required>
+              <span class="checkmark"></span>
+              I agree to receive travel updates and promotional emails
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div id="formSuccess" class="form-success" style="display: none;">
+          <i class="fas fa-check-circle"></i>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for contacting us. Our team will get back to you within 24 hours.</p>
+          <button id="sendAnother" class="btn btn-secondary">Send Another Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Live Chat Popup -->
+<div id="chatPopup" class="chat-popup">
+  <div class="chat-header">
+    <h3><i class="fas fa-comments"></i> Live Chat</h3>
+    <button id="closeChat" class="close-chat"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="chat-body">
+    <div class="chat-messages">
+      <div class="message operator">
+        <div class="message-content">
+          <p>Hello! Welcome to JavaTour. How can I help you today?</p>
+          <span class="message-time">Now</span>
+        </div>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatMessage" placeholder="Type your message...">
+      <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- Map Section -->
+<section class="map-section">
+  <div class="container">
+    <h2 class="section-title">Find Us</h2>
+    <!-- Embed a responsive Google Map -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.65294540307!2d106.68942752015094!3d-6.229386695729484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1653394170179!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What is the best time to visit Java?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>The best time to visit Java is during the dry season from May to September. This period offers pleasant weather conditions with minimal rainfall, making it ideal for exploring the island's attractions.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Do I need a visa to visit Java?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Many countries are eligible for visa-free entry or visa on arrival in Indonesia for stays up to 30 days. We recommend checking the latest visa requirements based on your nationality before planning your trip.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>How can I book a tour with JavaTour?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>You can book our tours by filling out the contact form on this page, emailing us directly at booking@javatour.com, or calling our office at +62 123 456 7890. We'll respond within 24 hours to help arrange your perfect Java journey.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Are your tours customizable?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely! We pride ourselves on creating personalized experiences. While we offer pre-designed tour packages, we're happy to customize any aspect of the itinerary to match your preferences, interests, and schedule.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What payment methods do you accept?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>We accept various payment methods including credit/debit cards (Visa, MasterCard, American Express), PayPal, bank transfers, and cash payments at our office. A 30% deposit is required to secure your booking.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>JavaTour</h3>
+      <p>Explore the wonders of Java Island with our expert guides and curated travel experiences.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> 123 Tourism St, Jakarta</li>
+        <li><i class="fas fa-phone"></i> +62 123 456 7890</li>
+        <li><i class="fas fa-envelope"></i> info@javatour.com</li>
+      </ul>
+    </div>
+    
+    <div class="footer-column">
+      <h3>We Accept</h3>
+      <div class="payment-methods">
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-amex"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright">
+    <p>&copy; 2025 JavaTour. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Floating Navigation -->
+<div class="floating-nav" id="floatingNav">
+  <a href="index.html"><i class="fas fa-home"></i></a>
+  <a href="places.html"><i class="fas fa-map-marker-alt"></i></a>
+  <a href="culture.html"><i class="fas fa-theater-masks"></i></a>
+  <a href="contact.html"><i class="fas fa-envelope"></i></a>
+</div>
+
+<!-- Back to Top Button -->
+<div class="back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Back to top and floating nav functionality
+    const backToTopButton = document.querySelector('.back-to-top');
+    const floatingNav = document.getElementById('floatingNav');
+    
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+        floatingNav.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+        floatingNav.classList.remove('visible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Dark mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeSlider = document.querySelector('.theme-toggle-slider');
+    
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        themeSlider.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem('darkMode', 'enabled');
+      } else {
+        themeSlider.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem('darkMode', 'disabled');
+      }
+    });
+    
+    // Check for saved theme preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      themeSlider.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+    
+    // FAQ Toggle Functionality
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const parent = this.parentNode;
+        parent.classList.toggle('active');
+        
+        const icon = this.querySelector('.faq-toggle i');
+        if (parent.classList.contains('active')) {
+          icon.classList.remove('fa-plus');
+          icon.classList.add('fa-minus');
+        } else {
+          icon.classList.remove('fa-minus');
+          icon.classList.add('fa-plus');
+        }
+      });
+    });
+    
+    // Contact Form Submission
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    const sendAnother = document.getElementById('sendAnother');
+    
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        contactForm.style.display = 'none';
+        formSuccess.style.display = 'block';
+      });
+    }
+    
+    if (sendAnother) {
+      sendAnother.addEventListener('click', function() {
+        contactForm.reset();
+        contactForm.style.display = 'block';
+        formSuccess.style.display = 'none';
+      });
+    }
+    
+    // Live Chat Functionality
+    const liveChatBtn = document.getElementById('liveChatBtn');
+    const chatPopup = document.getElementById('chatPopup');
+    const closeChat = document.getElementById('closeChat');
+    const chatMessage = document.getElementById('chatMessage');
+    const sendMessage = document.getElementById('sendMessage');
+    const chatMessages = document.querySelector('.chat-messages');
+    
+    liveChatBtn.addEventListener('click', function() {
+      chatPopup.classList.add('active');
+    });
+    
+    closeChat.addEventListener('click', function() {
+      chatPopup.classList.remove('active');
+    });
+    
+    function addMessage(content, isUser = false) {
+      const messageDiv = document.createElement('div');
+      messageDiv.classList.add('message');
+      if (isUser) {
+        messageDiv.classList.add('user');
+      } else {
+        messageDiv.classList.add('operator');
+      }
+      
+      const now = new Date();
+      const time = now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes();
+      
+      messageDiv.innerHTML = `
+        <div class="message-content">
+          <p>${content}</p>
+          <span class="message-time">${time}</span>
+        </div>
+      `;
+      
+      chatMessages.appendChild(messageDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    
+    function handleUserMessage() {
+      const message = chatMessage.value.trim();
+      if (message) {
+        addMessage(message, true);
+        chatMessage.value = '';
+        
+        // Simulate operator response after a delay
+        setTimeout(() => {
+          const responses = [
+            "Thank you for your message! Our travel specialist will connect with you shortly.",
+            "That's a great question about Java! Let me find some information for you.",
+            "I understand your request. We have several tour options that might suit your needs.",
+            "Thanks for your interest! What specific activities are you looking to experience in Java?"
+          ];
+          const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+          addMessage(randomResponse);
+        }, 1000);
+      }
+    }
+    
+    sendMessage.addEventListener('click', handleUserMessage);
+    
+    chatMessage.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        handleUserMessage();
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
